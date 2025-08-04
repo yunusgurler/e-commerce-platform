@@ -57,3 +57,12 @@ Use these seeded accounts for local testing:
 ```bash
 git clone https://github.com/yunusgurler/e-commerce-platform.git
 cd e-commerce-platform
+// Frontend
+cd frontend
+npm install
+npm run dev
+
+// Backend
+cd backend
+npm install
+npm run dev
