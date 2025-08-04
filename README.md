@@ -55,14 +55,21 @@ Use these seeded accounts for local testing:
 ### Clone and Setup
 
 ```bash
+# 1. Clone the repo and enter it
 git clone https://github.com/yunusgurler/e-commerce-platform.git
 cd e-commerce-platform
-// Frontend
-cd frontend
-npm install
-npm run dev
 
-// Backend
+# 2. Copy example env files for both services
+cp backend/.env.copy backend/.env
+cp frontend/.env.copy frontend/.env
+
+# 3. In one terminal, start the backend:
 cd backend
 npm install
 npm run dev
+
+# 4. In another terminal, start the frontend:
+cd ../frontend
+npm install
+npm run dev
+
